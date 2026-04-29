@@ -1,0 +1,277 @@
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.dashboard-header .subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 3rem 2rem;
+  width: 100%;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.loading,
+.error,
+.no-leads {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.no-leads {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.leads-count {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.leads-count p {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.leads-count strong {
+  color: #667eea;
+  font-size: 1.2rem;
+}
+
+.filter-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-label {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #e0e0e0;
+  border-color: #ccc;
+}
+
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.filter-btn.filter-hot.active {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.filter-btn.filter-warm.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.filter-btn.filter-cold.active {
+  background: #6b7280;
+  border-color: #6b7280;
+}
+
+.table-wrapper {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.leads-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.leads-table thead {
+  background: #f9f9f9;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.leads-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.leads-table tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+  transition: background 0.2s;
+}
+
+.leads-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.leads-table td {
+  padding: 1rem;
+  color: #555;
+}
+
+.leads-table .name {
+  font-weight: 600;
+  color: #333;
+}
+
+.leads-table .message {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+
+.leads-table .intent {
+  color: #667eea;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.badge-hot {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-warm {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-cold {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.urgency {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.urgency-high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.urgency-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.urgency-low {
+  background: #dbeafe;
+  color: #0c4a6e;
+}
+
+.leads-table .date {
+  color: #999;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .leads-table {
+    font-size: 0.85rem;
+  }
+
+  .leads-table th,
+  .leads-table td {
+    padding: 0.75rem;
+  }
+
+  .leads-table .message {
+    max-width: 150px;
+  }
+
+  .badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}

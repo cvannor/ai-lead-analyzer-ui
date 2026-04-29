@@ -1,0 +1,130 @@
+.lead-form {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #1a365d;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.9rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: #f9fafc;
+  color: #1a365d;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0aec0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2c5282;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #2c5282 0%, #1a365d 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(44, 82, 130, 0.2);
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1a365d 0%, #0f2847 100%);
+  box-shadow: 0 4px 16px rgba(44, 82, 130, 0.3);
+  transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.success-message {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: #ecfdf5;
+  color: #065f46;
+  border-left: 4px solid #10b981;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+}
+
+.error-message {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border-left: 4px solid #dc2626;
+  border-radius: 8px;
+  text-align: center;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.1);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .lead-form {
+    padding: 1.75rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+}

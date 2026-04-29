@@ -1,16 +1,49 @@
-# React + Vite
+# 🚀 AI Lead Analyzer - Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Transform Your Sales Pipeline with Intelligent Lead Qualification**
 
-Currently, two official plugins are available:
+A cutting-edge, production-ready React frontend built with modern technologies to deliver an exceptional user experience for lead management and analysis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- **Intuitive Lead Capture System** - Seamlessly collect prospect information through a beautifully designed form interface
+- **Real-Time Lead Dashboard** - Visualize and monitor your entire sales pipeline at a glance
+- **Fast, Lightning-Quick Performance** - Built with Vite for instant hot module reloading and optimized production builds
+- **Responsive Design** - Perfectly crafted to work flawlessly on desktop, tablet, and mobile devices
+- **Enterprise-Grade Architecture** - React 19 with React Router for scalable, maintainable code
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+- **React 19** - Modern UI library for building interactive applications
+- **Vite 8** - Next-generation frontend build tool for blazing-fast development
+- **React Router 7** - Advanced routing for seamless navigation
+- **ESLint** - Professional code quality standards
+- **Modern ES Modules** - Clean, future-proof JavaScript architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server with HMR
+npm run dev
+
+# Build optimized production bundle
+npm run build
+
+# Preview production build locally
+npm run preview
+
+# Run code quality checks
+npm run lint
+```
+
+## 🎯 Integration
+
+This frontend connects to the powerful AI Lead Analyzer backend API, leveraging advanced machine learning to score, analyze, and qualify leads in real-time.
+
+Perfect for:
+- Sales & marketing teams seeking automation
+- B2B companies scaling their sales operations
+- Businesses wanting data-driven lead prioritization

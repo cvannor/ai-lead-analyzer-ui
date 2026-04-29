@@ -122,7 +122,7 @@ function Dashboard() {
                   </thead>
                   <tbody>
                     {filteredLeads.map(lead => (
-                      <tr key={lead.id} className="lead-row">
+                      <tr key={lead.id} className={`lead-row ${lead.leadScore === 'HOT' ? 'lead-row-hot' : ''}`}>
                         <td className="name">{lead.name}</td>
                         <td className="message">{lead.message}</td>
                         <td className="intent">{lead.intent || '-'}</td>
